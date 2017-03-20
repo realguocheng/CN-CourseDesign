@@ -1,0 +1,11 @@
+[x,y] = textread('line0.txt','%f %f');
+plot(x,y,'r');
+hold on;
+[x,y] = textread('line1.txt','%f %f');
+plot(x,y,'g');
+hold on;
+[x,y] = textread('line2.txt','%f %f');
+plot(x,y,'b');
+xlabel('包到达时队列的长度(个)');
+ylabel('概率');
+legend('队列1','队列2','队列3');
